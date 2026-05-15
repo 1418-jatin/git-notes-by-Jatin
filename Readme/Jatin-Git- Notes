@@ -1,3 +1,6 @@
+NOTE: Never work on the main branch,
+Clone the repo into your local --> Move into repositry --> Pull the latest main branch, be in sync with the main branch --> then create your own branch and start working/updating
+=============================================================================
 GitHub: https://github.com/discover-devops?tab=repositories
 https://github.com/discover-devops/About-Me
 https://github.com/discover-devops/About-Me/blob/main/Who%20AM%20I.md
