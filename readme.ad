@@ -25,3 +25,17 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 once the key generated, copy the key from cat ~/ .ssh/id_ed25519.pub
 paste your ssh key to your git hub, go to your profile pic and hit settings --> ssh and Gpg keys --> add new ssh --> paste it, verify it and save it
 Test authentication from git-bash: ssh -T git@github.com
+==============================================================================
+Git fetch:
+git fetch is like checking what’s new on the remote repo without touching your local work. It downloads all the latest commits, branches, and tags from the remote into your local .git folder, but it doesn’t change your working files or your current branch. You can then inspect those changes with commands like git log origin/main or git diff main origin/main.
+git pull is basically git fetch + git merge (or rebase, depending on your config). It not only downloads the changes but also immediately tries to integrate them into your current branch. That’s why you sometimes see merge conflicts when you run git pull.
+
+Think of it like this:
+git fetch → “Bring me the news, but don’t act on it yet.”
+git pull → “Bring me the news and apply it right now.”
+
+👉 Best practice:
+
+Use git fetch when you want to review changes first before merging.
+Use git pull when you’re confident and just want to update quickly.
+
