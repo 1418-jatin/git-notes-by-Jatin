@@ -24,3 +24,4 @@ command to generate the ssh key in git bash:
 ssh-keygen -t ed25519 -C "your_email@example.com"
 once the key generated, copy the key from cat ~/ .ssh/id_ed25519.pub
 paste your ssh key to your git hub, go to your profile pic and hit settings --> ssh and Gpg keys --> add new ssh --> paste it, verify it and save it
+Test authentication from git-bash: ssh -T git@github.com
